@@ -1,8 +1,10 @@
 body {
-  background-color: #1c3b28; /* chalkboard green */
+  background-color: #1c3b28; 
   color: #f8f8f8;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 300; 
 }
+
 
 /* --- Typography --- */
 h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
@@ -12,7 +14,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
 
 /* --- Navbar --- */
 .custom-navbar {
-  background-color: #8B5A2B; /* brown wooden frame color */
+  background-color: #8B5A2B; 
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
