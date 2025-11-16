@@ -3,8 +3,8 @@ body {
   color: #f8f8f8;
   font-family: 'Fredoka', sans-serif;
   font-weight: 300;
+  word-wrap: break-word;
 }
-
 
 /* --- Typography --- */
 h1,
@@ -66,6 +66,26 @@ h6,
   border-radius: 12px;
   padding: 25px;
   font-family: 'Fredoka One', sans-serif;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .carousel-caption h2 {
+    font-size: 1.8rem;
+  }
+  .carousel-caption p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h2 {
+    font-size: 1.4rem;
+  }
+  .carousel-caption p {
+    font-size: 0.85rem;
+  }
 }
 
 /* --- Features --- */
@@ -82,12 +102,37 @@ h6,
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
+.feature-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #8B5A2B;
+}
+
+@media (max-width: 576px) {
+  .feature-card {
+    text-align: center;
+  }
+}
+
 /* --- Videos --- */
+
 .video-container iframe {
   width: 100%;
   height: 250px;
   border-radius: 10px;
   border: 3px solid #8B5A2B;
+}
+
+@media (min-width: 768px) {
+  .video-container iframe {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video-container iframe {
+    height: 450px;
+  }
 }
 
 /* --- About --- */
@@ -96,6 +141,18 @@ h6,
   padding: 30px;
   border-radius: 12px;
   border: 3px solid #8B5A2B;
+}
+
+.about-container .d-flex img {
+  max-width: 120px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .about-container .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /* --- Footer --- */
@@ -113,6 +170,11 @@ h6,
 
 .custom-footer a:hover {
   text-decoration: underline;
+}
+
+.custom-footer img {
+  max-width: 60px;
+  height: auto;
 }
 
 /* --- Modal Styling --- */
