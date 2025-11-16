@@ -92,7 +92,7 @@
         <!-- Slide 5 -->
         <div class="carousel-item" style="background-image:url('https://i.imgur.com/Wn3UIyA.jpg');">
           <div class="carousel-caption">
-            <h2>Begin Your Journey with Juan</h2>
+            <h2>Begin Your Journey</h2>
             <p>Join our character as he rediscovers the Filipino spirit — celebrating resilience, community, and pride
               through
               every challenge.</p>
@@ -143,7 +143,7 @@
 
         <div class="col-md-4">
           <div class="card feature-card">
-            <img src="img/quiz.JPG" class="card-img-top" alt="Quiz" />
+            <img src="img/quiz.png" class="card-img-top" alt="Quiz" />
             <div class="card-body">
               <h5 class="card-title">📝 Quiz</h5>
               <p>Test your knowledge with Lola's Quiz to see if you have listened carefully to her stories about our
@@ -194,19 +194,21 @@
   <section id="download" class="py-5 text-center">
     <div class="container">
       <h2 class="text-warning mb-4">🎥 Watch Our Trailers</h2>
-      <div class="row g-4 video-container">
-        <div class="col-md-4"><iframe src="https://www.youtube.com/embed/your_video_1" title="LANDAS Trailer 1"
-            allowfullscreen></iframe></div>
-        <div class="col-md-4"><iframe src="https://www.youtube.com/embed/your_video_2" title="LANDAS Trailer 2"
-            allowfullscreen></iframe></div>
-        <div class="col-md-4"><iframe src="https://www.youtube.com/embed/your_video_3" title="LANDAS Trailer 3"
-            allowfullscreen></iframe></div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://drive.google.com/file/d/1FDr4SwanvHmLJC9AdoasAazmM5bfwqa5/preview" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
       </div>
 
       <!-- Disabled Download Button -->
-      <button class="btn btn-warning btn-lg fw-bold mt-4" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
+      <a href="https://github.com/SwingEntertainment/LANDAS/releases/download/v0.1.0/LANDAS.apk"
+        class="btn btn-warning btn-lg fw-bold mt-4" download>
         ⬇️ Download Game
-      </button>
+      </a>
 
       <p class="mt-3">
         Old versions:
@@ -216,25 +218,32 @@
         </a>
       </p>
     </div>
+  </section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="comingSoonModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content custom-modal">
-          <div class="modal-header">
-            <h5 class="modal-title text-warning" id="comingSoonModalLabel">🚧 Game in Development</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            The LANDAS game is still in development. Stay tuned for updates and official releases soon!
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Okay</button>
-          </div>
-        </div>
+  <!-- Modal -->
+ <div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="comingSoonModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title text-warning" id="comingSoonModalLabel">🚧 Game in Development</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        The LANDAS game is still in development. Stay tuned for updates and official releases soon!
+        <br><br>
+        <strong>You can view older versions here:</strong><br>
+        <a href="https://github.com/SwingEntertainment/LANDAS/releases" target="_blank" class="text-warning">
+          🔗 GitHub Releases Page
+        </a>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Okay</button>
       </div>
     </div>
+  </div>
+</div>
   </section>
 
 
