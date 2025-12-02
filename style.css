@@ -75,10 +75,47 @@ h6,
   text-align: center;
 }
 
+.btn-play {
+  background-color: #ffd966;
+  color: #0c0d0c;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@media (min-width: 1200px) {
+  .video-container iframe {
+    height: 450px;
+  }
+
+  .section-container {
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 992px) {
   .carousel-item {
     height: 60vh;
     background-size: contain;
+  }
+
+  .section-container {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .video-container iframe {
+    height: 350px;
+  }
+
+  .about-container .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section-container {
+    padding-top: 20px;
   }
 }
 
@@ -87,6 +124,14 @@ h6,
     height: 45vh;
     background-size: contain;
     background-position: top center;
+  }
+
+  .feature-card {
+    text-align: center;
+  }
+
+  .section-container {
+    padding-top: 20px;
   }
 }
 
@@ -110,30 +155,12 @@ h6,
   border-bottom: 2px solid #8B5A2B;
 }
 
-@media (max-width: 576px) {
-  .feature-card {
-    text-align: center;
-  }
-}
-
 /* --- Videos --- */
 .video-container iframe {
   width: 100%;
   height: 250px;
   border-radius: 10px;
   border: 3px solid #8B5A2B;
-}
-
-@media (min-width: 768px) {
-  .video-container iframe {
-    height: 350px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .video-container iframe {
-    height: 450px;
-  }
 }
 
 /* --- About --- */
@@ -147,13 +174,6 @@ h6,
 .about-container .d-flex img {
   max-width: 120px;
   height: auto;
-}
-
-@media (max-width: 768px) {
-  .about-container .d-flex {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 
 /* --- Footer --- */
@@ -197,4 +217,32 @@ h6,
 
 .custom-modal .btn-close-white {
   filter: invert(1);
+}
+
+/*SYSTEM REQUIREMENTS TABLE*/
+.requirements-table {
+  background-color: #2f4f32;
+  color: #f8f8f8;
+  border: 3px solid #8B5A2B;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.requirements-table table {
+  margin: 0;
+}
+
+.requirements-table thead {
+  background-color: #8B5A2B !important;
+  color: #ffd966 !important;
+}
+
+.requirements-table td,
+.requirements-table th {
+  border-color: #8B5A2B !important;
+}
+
+.requirements-table tbody tr:hover {
+  background-color: rgba(255, 217, 102, 0.08);
+  transition: background-color 0.3s ease;
 }
